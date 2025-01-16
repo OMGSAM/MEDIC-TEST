@@ -12,7 +12,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <title>Inaamajay </title>
+    <title>Katim-Health Care </title>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta content="Inaamajay" name="author">
@@ -20,7 +20,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
     <meta content="Elevate your online presence with Inaamajay - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos."
           name="description">
 
-    <link href="images/favicon.png" rel="shortcut icon">
+    <link href="images/d.png" rel="shortcut icon">
     <link href="images/apple-touch-icon-57x57.png" rel="apple-touch-icon">
     <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
@@ -39,22 +39,18 @@ $conn = new mysqli($host, $username, $password, $dbname);
     <link href="demos/medical/medical.css" rel="stylesheet"/>
 </head>
 <body data-mobile-nav-style="classic">
+    
+
+ 
 
 <?php
 
 
 if ($conn) {
-     echo"
-            <script>
-                Swal.fire({
-                    icon: 'success',
-                    title: 'DATABASE CONNECTED',
-                    text: 'Coordonnnees  valides!',
-                    confiramtaionButtonText: 'Ok',
-                    timer : 2f500
-                })
-            </script>
-            ";
+    echo "<script>swal({
+        title: 'DATABASE CONNECTED',
+        icon: 'success',
+    });</script>";
     }
      
 
@@ -62,15 +58,19 @@ if ($conn) {
 
 
 <div class="box-layout">
+ 
+ 
 
     <header>
+        
 
         <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
                     <a class="navbar-brand" href="index.php">
                         <img alt class="default-logo"
-                             data-at2x="images/demo-medical-logo-black@2x.png" src="images/demo-medical-logo-black.png">
+                             data-at2x="images/demo-medical-logo-black@2x.png" src="images/d.png">
+                             
                         <img alt class="alt-logo"
                              data-at2x="images/demo-medical-logo-black@2x.png" src="images/demo-medical-logo-black.png">
                         <img alt class="mobile-logo"
@@ -115,6 +115,7 @@ if ($conn) {
         </nav>
 
     </header>
+ 
 
 
     <section class="top-space-margin overflow-hidden position-relative p-0 border-radius-10px lg-no-border-radius"
@@ -530,8 +531,10 @@ if ($conn) {
                        href="tel:12345678910">
 <span>
 <span><i class="feather icon-feather-phone-call"></i></span>
-<span class="btn-double-text" data-text="+1 234 567 8910">06 42 55 52 22</span>
+<span class="btn-double-text" data-text="+06 42 55 52 22">06 42 55 52 22</span>
 </span>
+ 
+
                     </a>
                 </div>
             </div>
@@ -589,7 +592,7 @@ if ($conn) {
                                         </div>
                                     </div>
                                     <div class="process-content ps-20px last-paragraph-no-margin">
-                                        <span class="d-block fw-600 text-white fs-18">Book schedule</span>
+                                        <span class="d-block fw-600 text-white fs-18"> BOOK schedule</span>
                                         <p class="text-white opacity-7">Lorem sit printing</p>
                                     </div>
                                 </div>
@@ -788,7 +791,7 @@ if ($conn) {
     </div>
 
     <div class="col-md-6 mb-30px">
-        <input class="form-control border-radius-4px border-color-white box-shadow-double-large" type="date" name="date" value="2023-01-01" aria-label="date"   />
+        <input class="form-control border-radius-4px border-color-white box-shadow-double-large" type="date"  min="2025-01-01" max="2025-12-31"  name="date" value="2025-01-01" aria-label="date"    />
     </div>
 
     <div class="col-md-6 mb-30px">
@@ -881,14 +884,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
     <footer class="p-0">
         <div class="footer-top bg-dark-gray pt-35px pb-35px border-radius-6px lg-no-border-radius position-relative overflow-hidden">
             <div class="position-absolute right-minus-100px bottom-minus-80px margin-100px-top opacity-1 w-250px"><img
-                    alt class src="images/demo-medical-pattern-white.svg"></div>
+                    alt class src="images/d.png"></div>
             <div class="container">
                 <div class="row align-items-center">
 
                     <div class="col-xl-3 col-sm-6 order-1 text-center text-sm-start xs-mb-20px">
                         <a class="footer-logo d-inline-block" href="index.php"><img
                                 alt
-                                data-at2x="images/demo-medical-logo-white@2x.png" src="images/demo-medical-logo-white.png"></a>
+                                data-at2x="images/demo-medical-logo-white@2x.png" src="images/d.png"></a>
                     </div>
 
 

@@ -1,4 +1,4 @@
-﻿<?php
+﻿<!-- <?php
 $host = "localhost"; // Remplacez par votre hôte
 $username = "root"; // Remplacez par votre utilisateur
 $password = ""; // Remplacez par votre mot de passe
@@ -10,7 +10,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<title>KATIM    </title>
+<title>Katim-Health Care    </title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="author" content="Inaamajay">
@@ -58,7 +58,10 @@ $conn = new mysqli($host, $username, $password, $dbname);
 
 <div class="box-layout">
 
-<header>
+<header> -->
+<?php
+include "header.php" ;
+?>
 
 <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
 <div class="container-fluid">
@@ -202,7 +205,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
     </div>
 
     <div class="col-md-6 mb-30px">
-        <input class="form-control border-radius-4px border-color-white box-shadow-double-large" type="date" name="date" value="2023-01-01" aria-label="date"   />
+        <input class="form-control border-radius-4px border-color-white box-shadow-double-large" type="date" name="date" min="2025-01-01" max="2025-12-31"  name="date" value="2025-01-01" aria-label="date"   />
     </div>
 
     <div class="col-md-6 mb-30px">
@@ -210,11 +213,11 @@ $conn = new mysqli($host, $username, $password, $dbname);
             <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="select" aria-label="select-doctor"  >
                 <option value="">Select doctor</option>
                
-                <option value="Pediatrician - Dr. Bryan jonhson">Pediatrician - Dr. Bryan jonhson</option>
-                <option value="Cardiology - Dr. Jemmy watson">Cardiology - Dr. Jemmy watson</option>
-                <option value="Neurology - Dr. Jeremy dupont">Neurology - Dr. Jeremy dupont</option>
-                <option value="Orthopedics - Dr. Evan thomson">Orthopedics - Dr. Evan thomson</option>
-                <option value="Optometrists - Dr. Shoko mugikura">Optometrists - Dr. Shoko mugikura</option>
+                <option value="Pediatrician - Dr. Bryan jonhson">Pediatrician - Dr. Imad jonhson</option>
+                <option value="Cardiology - Dr. Jemmy watson">Cardiology - Dr. Ayman watson</option>
+                <option value="Neurology - Dr. Jeremy dupont">Neurology - Dr. Jihad dupont</option>
+                <option value="Orthopedics - Dr. Evan thomson">Orthopedics - Dr. Aya thomson</option>
+                <option value="Optometrists - Dr. Shoko mugikura">Optometrists - Dr. Simo mugikura</option>
             </select>
         </div>
     </div>
