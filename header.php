@@ -30,6 +30,14 @@ $conn = new mysqli($host, $username, $password, $dbname);
     <link crossorigin href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+          <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Empêche le rafraîchissement de la page
+            alert('Le formulaire a été soumis !'); // Affiche l'alerte
+        }
+    </script>
+    </script>
 
 
     <link href="css/vendors.min.css" rel="stylesheet"/>

@@ -38,8 +38,8 @@ $conn = new mysqli($host, $username, $password, $dbname);
     <link href="css/responsive.min.css" rel="stylesheet"/>
     <link href="demos/medical/medical.css" rel="stylesheet"/>
 </head>
-<body data-mobile-nav-style="classic">
-    
+<body>
+
 
  
 
@@ -55,14 +55,15 @@ if ($conn) {
      
 
      ?>
+    
 
-
+ 
 <div class="box-layout">
- 
- 
+
 
     <header>
-        
+     
+   
 
         <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
             <div class="container-fluid">
@@ -722,7 +723,7 @@ if ($conn) {
                         </div>
                         <a class="text-dark-gray fs-18 fw-700 mb-5px" href="#">Dr. Matthew taylor</a>
                         <p class="w-90 mx-auto lh-28">Specialize in <span
-                                class="text-dark-gray text-decoration-line-bottom fw-500">psychiatry</span> at Inaamajay
+                                class="text-dark-gray text-decoration-line-bottom fw-500">psychiatry</span> at Katim
                             hospital.</p>
                         <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                             <ul class="small-icon dark">
@@ -930,7 +931,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
             <div class="row row-cols-1 row-cols-md-2 align-items-center pt-30px pb-30px">
 
                 <div class="col last-paragraph-no-margin fs-15 text-center text-md-start sm-mb-10px">
-                    <p>&copy; 2024 Katim is Proudly Powered by <a class="text-decoration-line-bottom text-dark-gray fw-600" href="https://www.Inaamajay.com/"
+                    <p>&copy; 2024 Katim is Proudly Powered by <a class="text-decoration-line-bottom text-dark-gray fw-600" href="https://www.katim.com/"
                                                                    target="_blank">Katim</a>
                     </p>
                 </div>

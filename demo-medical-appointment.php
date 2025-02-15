@@ -1,4 +1,5 @@
-﻿<!-- <?php
+﻿
+<!-- <?php
 $host = "localhost"; // Remplacez par votre hôte
 $username = "root"; // Remplacez par votre utilisateur
 $password = ""; // Remplacez par votre mot de passe
@@ -24,6 +25,8 @@ $conn = new mysqli($host, $username, $password, $dbname);
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script> 
+ 
+ 
 
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -193,7 +196,7 @@ include "header.php" ;
 <div class="row align-items-center justify-content-center position-relative z-index-1">
 <div class="col-lg-10">
 
-<form method="POST" action="" class="row contact-form-style-02">
+<form method="POST" action="" class="row contact-form-style-02" onsubmit="handleSubmit(event)">
     <div class="col-md-6 mb-30px">
         <input class="form-control border-radius-8px border-color-white box-shadow-double-large" type="number" name="age" placeholder="AGE"   />
         <input class="input-name border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="name" placeholder="Patient's full name*"   />
@@ -205,7 +208,7 @@ include "header.php" ;
     </div>
 
     <div class="col-md-6 mb-30px">
-        <input class="form-control border-radius-4px border-color-white box-shadow-double-large" type="date" name="date" min="2025-01-01" max="2025-12-31"  name="date" value="2025-01-01" aria-label="date"   />
+        <input class="form-control border-radius-4px border-color-white box-shadow-double-large"  id="date" type="date" name="date" min="2025-01-01" max="2025-12-31"  name="date" value="2025-01-01" aria-label="date"   />
     </div>
 
     <div class="col-md-6 mb-30px">
