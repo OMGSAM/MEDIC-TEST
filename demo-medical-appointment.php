@@ -361,8 +361,15 @@ if (isset($_POST['user_submit'])) {
 <div class="row align-items-center">
 
 <div class="col-xl-3 col-sm-6 order-1 text-center text-sm-start xs-mb-20px">
-<a href="index.php" class="footer-logo d-inline-block"><img src="images/demo-medical-logo-white.png" data-at2x="images/demo-medical-logo-white@2x.png" alt></a>
-</div>
+<a href="index.php">
+
+                        <img alt class="default-logo"
+                             data-at2x="images/demo-medical-logo-black@2x.png" src="images/d.png">
+                     
+
+                        
+                    </a>
+                </div>
 
 
 <div class="col-xl-6 order-3 order-xl-2 lg-mt-10px">
